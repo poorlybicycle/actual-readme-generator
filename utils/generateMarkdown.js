@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license == 'MIT') {
-    return 
+    return
   }
   if (license == 'Apache') {
     return 'https://opensource.org/licenses/Apache-2.0'
