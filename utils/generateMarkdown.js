@@ -34,20 +34,8 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license == 'MIT') {
-    return
-  }
-  if (license == 'Apache') {
-    return 'https://opensource.org/licenses/Apache-2.0'
-  }
-  if (license == 'Unlicense') {
-    return 'http://unlicense.org/'
-  }
-  if (license == 'None') {
-    return ''
-  }
-}
+function renderLicenseSection(license) { }
+//I believe this is done 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -64,18 +52,24 @@ ${data.description}
 - [Questions] (#questions)
 
 ## Installation
+${data.installation}
 
 ## Usage
+${data.usage}
 
 ## License
 ${renderLicenseBadge(data.license)}
 
 ## Contributing
+${data.contributing}
 
 ## Tests
+${data.tests}
 
 ## Questions
-
+${data.questions}
+${data.githublink}
+${data.email}
 
 `;
 }
